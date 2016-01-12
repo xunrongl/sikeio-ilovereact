@@ -602,6 +602,7 @@ a:hover {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 6%;
   background-color: rgba(0,255,0,0.3);
 }
 

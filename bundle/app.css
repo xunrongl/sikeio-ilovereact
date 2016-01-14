@@ -468,6 +468,7 @@ a:hover {
 
 img {
   z-index: 1;
+  position: relative;
 }
 
 .section {
@@ -483,7 +484,7 @@ img {
   
 }
 
-.first {
+#intro-section {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -546,7 +547,7 @@ img {
   padding: 0 10px;
 }
 
-.second {
+#native #touch{
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -632,7 +633,7 @@ img {
   /*background-color: rgba(0,255,0,0.3);*/
 }
 
-.fourth {
+#android {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -650,15 +651,15 @@ img {
 }
 
 #android-robot {
-  -webkit-transform: translate(50%, 50%) rotate(-45deg);
-          transform: translate(50%, 50%) rotate(-45deg);
+  -webkit-transform: translate(50%, 50%) rotate(-40deg);
+          transform: translate(50%, 50%) rotate(-40deg);
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
 #slider-control {
-  padding: 3px;
+  padding-right: 10px;
   position: fixed;
   top: 50%;
   right: 0;

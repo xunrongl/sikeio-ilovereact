@@ -3,6 +3,7 @@ window.onload = function() {
 	animateRobot();
 	updateSliderControl();
 	addSmoothScrolling();
+	addScrollingBling();
 }
 
 window.onscroll = function() {
@@ -89,4 +90,27 @@ function addSmoothScrolling() {
 			
 		})
 	}
+}
+
+function addScrollingBling() {
+	var controller = new ScrollMagic.Controller();
+	var moveIPhone = new ScrollMagic.Scene({
+		triggerElement: "#native",
+		triggerHook: "onEnter",
+		duration: "100%"
+	}).addTo(controller)
+	  // .addIndicators({name: "move iphone"})
+	  .setTween("#iphone-overlay", 1, {
+		width: "50%",
+		y: 0
+	});
+
+	 var pinIPhone = new ScrollMagic.Scene({
+	 	triggerElement: "#native",
+	 	triggerHook: "onLeave",
+	 	duration: "100%"
+	 }).addTo(controller)
+	   // .addIndicators({name: "pin iphone"})
+	   .setPin("#iphone-overlay");
+
 }
